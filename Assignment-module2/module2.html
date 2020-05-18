@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Module 2 Assignment</title>
+<style>
+
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+}
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+p {
+  border: 1px solid black;
+  background-color: #A52A2A;
+  width: 90%;
+  height: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 40px 10px 1px 10px;
+  font-family: Helvetica;
+  color: white;
+  overflow: auto;
+}
+section{
+  position: relative;
+}
+#a{
+  border: 1px solid black;
+  width:150px;
+  height:25px;
+  position: relative;
+  text-align: center;
+  background-color: lightgreen;
+  padding:3px 50px 3px 50px;
+  margin-top:0px;
+  margin-left: auto;
+  margin-right: 5%;
+  position: relative;
+  top:41px;
+  right: 0px;
+  color: black; 
+}
+#b{
+  border: 1px solid black;
+  width:150px;
+  height:25px;
+  position: relative;
+  text-align: center;
+  background-color: purple;
+  padding:3px 50px 3px 50px;
+  margin-top:0px;
+  margin-left: auto;
+  margin-right: 5%;
+  position: relative;
+  top:41px;
+  right: 0px; 
+}
+#c{
+  border: 1px solid black;
+  width:150px;
+  height:25px;
+  position: relative;
+  text-align: center;
+  background-color: blue;
+  padding:3px 50px 3px 50px;
+  margin-top:0px;
+  margin-left: auto;
+  margin-right: 5%;
+  position: relative;
+  top:41px;
+  right: 0px; 
+}
+
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .col-lg-4 {
+    float: left;
+
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  }
+}
+
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6, .col-md-1 {
+    float: left;
+  }
+  
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-1 {
+    width: 100%;
+  }
+  .special{
+  width: 95%
+  }
+  #c{
+    margin-right: 2.5%;
+  } 
+}
+@media(max-width: 767px){
+  .col-sd-1{
+    float: left;
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+<body>
+<h1>Our Menu</h1>
+
+<div class="row">
+  <div class="col-lg-4 col-md-6 col-sd-1"><section><p id = "a">Chicken</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia distinctio aliquid cupiditate perferendis fuga, sit quasi alias vero sunt non, ratione earum dolores nihil! Consequuntur pariatur totam incidunt soluta expedita.</p></section></div>
+  <div class="col-lg-4 col-md-6 col-sd-1"><section><p id = "b">Beef</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia distinctio aliquid cupiditate perferendis fuga, sit quasi alias vero sunt non, ratione earum dolores nihil! Consequuntur pariatur totam incidunt soluta expedita.</p></section></div>
+  <div class="col-lg-4 col-md-1 col-sd-1"><section><p id = "c">Sushi</p><p class ="special">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia distinctio aliquid cupiditate perferendis fuga, sit quasi alias vero sunt non, ratione earum dolores nihil! Consequuntur pariatur totam incidunt soluta expedita.</p></section></div>
+
+</div>
+
+</body>
+</html>
